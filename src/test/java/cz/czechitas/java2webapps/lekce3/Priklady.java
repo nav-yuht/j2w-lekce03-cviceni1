@@ -2,10 +2,8 @@ package cz.czechitas.java2webapps.lekce3;
 
 import org.junit.jupiter.api.Test;
 
-import java.time.Duration;
 import java.time.LocalDate;
 import java.time.Period;
-import java.time.temporal.ChronoUnit;
 
 /**
  * Části kódu, které by se mohly hodit.
