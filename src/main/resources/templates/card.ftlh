@@ -1,3 +1,4 @@
+[#ftl]
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -16,15 +17,15 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Jan_Palach_foto_z_pr%C5%AFkazu.JPG" class="photo" alt="profilové foto"/>
     <div class="row">
       <span class="label">Jméno</span>
-      <span class="value">Jan</span>
+      <span class="value">${person.jmeno}</span>
     </div>
     <div class="row">
       <span class="label">Příjmení</span>
-      <span class="value">Palach</span>
+      <span class="value">${person.prijmeni}</span>
     </div>
     <div class="row">
       <span class="label">Datum narození</span>
-      <span class="value">11. srpna 1948</span>
+      <span class="value">${person.datumNarozeni?date}</span>
     </div>
     <div class="row">
       <span class="label">Věk</span>
@@ -32,8 +33,9 @@
     </div>
   </div>
   <div class="address">
-    <div class="address-line">Smetanova 337</div>
-    <div class="address-line">27716 Všetaty</div>
+    <div class="address-line">${adresa.uliceACisloDomu}</div>
+    <div class="address-line">${adresa.obec}</div> ${adresa.psc}</div>
+
   </div>
 </div>
 </body>
