@@ -12,19 +12,27 @@ public class CardController {
     @GetMapping ("/")
     public ModelAndView getCard() {
         ModelAndView result = new ModelAndView("card");
-        Person prvniPerson = new Person("Al", "Pacino", LocalDate.of(1990, 1, 1));
-        //result.addObject(prvniPerson); jedna moznost
+
+        //definovani osoby
+        Person prvniPerson = new Person("Heath", "Ledger", LocalDate.of(1990, 1, 1));
+
         result.addObject("person", prvniPerson);
-        return result;
+
+        //definovani adresy
+        //result.addObject("address", new Address ("Hell 547/6", "Heaven", "12300" ));
+
+        return result; //jeden objekt jako je result muze reprezentovat jak adresu tak i osobu?
+        //Lze v ramci jedne metody definoat vice objektu. Napr., zde bylo definovany metodu k
+        //zobrazeni v ramci jedne karty jak jmeno, tak i adresu osoby.
+
     }
 
-    public ModelAndView getAddress(){
-        ModelAndView result1 = new ModelAndView("address");
-        Address adresa = new Address("Hell 547/6", "Heaven", 12300 );
+
+    public ModelAndView getAddress() {
+        ModelAndView result1 = new ModelAndView("getAddress");
+        Address adresa = new Address("Hell 547/6", "Heaven", "12300");
+
         result1.addObject("address", adresa);
-        return  result1;
+        return result1;
     }
-
-
-
 }
