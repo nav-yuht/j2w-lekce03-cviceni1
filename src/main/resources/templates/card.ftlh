@@ -14,7 +14,7 @@
 <div class="container">
   <div class="person-info">
     <div class="photo-border"></div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Jan_Palach_foto_z_pr%C5%AFkazu.JPG" class="photo" alt="profilové foto"/>
+    <img src="https://thispersondoesnotexist.com/image" class="photo" alt="profilové foto"/>
     <div class="row">
       <span class="label">Jméno</span>
       <span class="value">${person.jmeno}</span>
@@ -33,10 +33,10 @@
     </div>
   </div>
   <div class="address">
-    <div class="address-line">${adresa.uliceACisloDomu}</div>
-    <div class="address-line">${adresa.obec}</div> ${adresa.psc}</div>
+    <div class="address-line">${address.uliceACisloDomu}</div>
+    <div class="address-line">${address.obec}</div> ${address.PSC}</div>
 
-  </div>
+
 </div>
 </body>
 </html>
